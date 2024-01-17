@@ -9,4 +9,5 @@ class Equity(models.Model):
     ticker = models.CharField(max_length=10)
     shares = models.PositiveIntegerField()
     average_price_per_share = models.DecimalField(max_digits=10, decimal_places=2)
+    current_price_per_share = models.DecimalField(max_digits=10, decimal_places=2)
     date_purchased = models.DateField()

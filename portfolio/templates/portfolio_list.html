@@ -9,6 +9,6 @@
 <h2>Equities</h2>
 <ul>
     {% for equity in equity_list %}
-        <li>{{ equity.ticker }} - {{ equity.shares }} shares at ${{ equity.average_price_per_share }} on {{ equity.date_purchased }}</li>
+        <li>{{ equity.ticker }} - {{ equity.shares }} shares at ${{ equity.average_price_per_share }} on {{ equity.date_purchased }}. Current Price is ${{ equity.current_price_per_share }}</li>
     {% endfor %}
 </ul>
