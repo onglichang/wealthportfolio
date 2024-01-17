@@ -1,0 +1,14 @@
+<!-- portfolio/templates/portfolio/portfolio_list.html -->
+<h2>Cash</h2>
+<ul>
+    {% for bank_account in bank_account_list %}
+        <li>{{ bank_account.name}} - {{ bank_account.amount }}</li>
+    {% endfor %}
+</ul>
+
+<h2>Equities</h2>
+<ul>
+    {% for equity in equity_list %}
+        <li>{{ equity.ticker }} - {{ equity.shares }} shares at ${{ equity.average_price_per_share }} on {{ equity.date_purchased }}</li>
+    {% endfor %}
+</ul>
